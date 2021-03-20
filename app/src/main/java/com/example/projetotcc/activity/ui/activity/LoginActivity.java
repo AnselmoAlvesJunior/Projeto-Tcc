@@ -1,4 +1,4 @@
-package com.example.projetotcc.activity.activity;
+package com.example.projetotcc.activity.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
