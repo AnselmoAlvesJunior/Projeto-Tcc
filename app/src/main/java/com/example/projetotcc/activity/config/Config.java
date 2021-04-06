@@ -5,8 +5,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public final class Config  {
+
     private static DatabaseReference databaseReference;
     private static FirebaseAuth autenticacao;
+
     public static DatabaseReference getFirebase(){
         if(databaseReference==null){
             databaseReference= FirebaseDatabase.getInstance().getReference();
@@ -14,7 +16,7 @@ public final class Config  {
         return databaseReference;
     }
 
-    public static FirebaseAuth getautenticacao(){
+    public static FirebaseAuth getAutenticacao(){
         if (autenticacao==null){
             autenticacao=FirebaseAuth.getInstance();
         }

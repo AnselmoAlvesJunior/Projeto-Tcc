@@ -56,7 +56,7 @@ public class CadastroActivity extends AppCompatActivity {
 
     }
     private void cadastrarUsuario(){
-        autenticacao= Config.getautenticacao();
+        autenticacao= Config.getAutenticacao();
         autenticacao.createUserWithEmailAndPassword(user.getEmail(),user.getSenha()).addOnCompleteListener(CadastroActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
