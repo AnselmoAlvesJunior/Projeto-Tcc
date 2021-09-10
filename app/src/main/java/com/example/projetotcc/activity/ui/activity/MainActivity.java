@@ -11,15 +11,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.projetotcc.R;
 import com.example.projetotcc.activity.config.Config;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -46,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         if(savedInstanceState==null){
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_container,new ProfileFragment())
+                .replace(R.id.fragment_container,new MapFragment())
                 .commit();
-        navigationView.setCheckedItem(R.id.nav_profile);}
+        navigationView.setCheckedItem(R.id.nav_map);}
     }
 
     @Override
@@ -71,9 +68,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_message:
                 Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.nav_profile:
+            case R.id.nav_map:
                 getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container,new ProfileFragment())
+                        .replace(R.id.fragment_container,new MapFragment())
                         .commit();
                 break;
             case R.id.nav_share:
@@ -100,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 logOut();
                 return true;
         }
-        return true;989
+        return true;
     }
 
     private void logOut() {

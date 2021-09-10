@@ -9,13 +9,13 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/nav_message"
             android:icon="@drawable/ic_baseline_message_24"
-            android:title="Message"/>
+            android:title="Mural de Serviços"/>
         <item android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_baseline_message_24"
-            android:title="Message"/>
-        <item android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_baseline_message_24"
-            android:title="Message"/>
+            android:icon="@drawable/ic_baseline_build_24"
+            android:title="Categoria"/>
+        <item android:id="@+id/nav_map"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="Geolocalização"/>
     </group>
     <item android:title="Communicate">
         <menu>
