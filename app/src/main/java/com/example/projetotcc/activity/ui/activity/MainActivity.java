@@ -62,11 +62,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.nav_chat:
-                Toast.makeText(this, "chat", Toast.LENGTH_SHORT).show();
+            case R.id.nav_post:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container,new PostFragment())
+                        .commit();
                 break;
-            case R.id.nav_message:
-                Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
+            case R.id.nav_category:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container,new CategoryFragment())
+                        .commit();
                 break;
             case R.id.nav_map:
                 getSupportFragmentManager().beginTransaction()
