@@ -1,4 +1,4 @@
-package com.example.projetotcc.activity.ui.activity;
+package com.example.projetotcc.view.ui.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -14,7 +14,10 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.projetotcc.R;
-import com.example.projetotcc.activity.config.Config;
+import com.example.projetotcc.config.Config;
+import com.example.projetotcc.view.ui.fragment.CategoryFragment;
+import com.example.projetotcc.view.ui.fragment.MapFragment;
+import com.example.projetotcc.view.ui.fragment.PostFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 

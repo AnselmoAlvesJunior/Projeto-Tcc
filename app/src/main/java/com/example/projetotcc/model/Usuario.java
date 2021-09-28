@@ -1,6 +1,6 @@
-package com.example.projetotcc.activity.model;
+package com.example.projetotcc.model;
 
-import com.example.projetotcc.activity.config.Config;
+import com.example.projetotcc.config.Config;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
